@@ -1,4 +1,4 @@
-valor1 = 50
+valor1 = 50--
 valor2 = 30 
 valor3 = 10
 quadrado1 = valor1 ** 2

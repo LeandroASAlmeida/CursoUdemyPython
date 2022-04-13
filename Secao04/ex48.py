@@ -1,4 +1,4 @@
-conversao = (86400, 3600, 60) #Segundos por: dia, hora, minuto
+conversao = (86400, 3600, 60) #Segundos por: hora, minuto
 
 segundoUsuario = int(input("Por favor, entre com o número de segundos que deseja converter: "))
 
