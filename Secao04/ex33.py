@@ -1,7 +1,7 @@
-lado = 10--
+lado = int(input("Digite o valor correspondente ao lado de um quadrado:"))
+
 quadrado = lado * 4
 area = lado * lado
-print("Cada lado do quadrado tem :",quadrado,"e sua área:",area)
 
- 
-######################## revisar
+
+print("quadradro:",quadrado,"- área:",area)
