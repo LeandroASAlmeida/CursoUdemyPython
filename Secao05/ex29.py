@@ -1,12 +1,14 @@
-a= int(input('Escolha um numero aleatório entre 1 e 100 : '))---
-b= int(input('Escolha outro numero aleatório entre 1 e 100 : '))
-print('Você escolheu o numero {} e o numero {}.'.format(a,b))
-result = int(input(' Qual o resultado de {} + {} ?: '.format(a,b)))
-soma = a + b
+from random import randint
 
-if result == soma:
-    print('Parabens você acertou')
-else:
-    print('O Valor da sua resposta está errado')
-
-
+c = 0
+for contador in range(1, 6):
+    a = randint(1, 100)
+    b = randint(1, 100)
+    conta = int(input(f'{contador}- Qual o valor da soma de {a} + {b}? ='))
+    resul = a + b
+    if conta == resul:
+        print('Acertou acertou.')
+        c += 1
+    else:
+        print('Infelizmente você errou.')
+print(f'Você acertou {c} questões.')
