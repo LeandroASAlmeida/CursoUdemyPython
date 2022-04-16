@@ -1,24 +1,21 @@
-altura = float(input('Informe sua altura: '))
-peso = float(input('Informe seu peso: '))
+peso = float(input('Qual o seu peso em kg?'))
+altura = float(input('Qual a sua altura em metros?'))
 
-
-if altura < 1.20 and peso < 60:
-    print('Classificação A')
-elif (altura < 1.20 and peso >= 60 and peso <= 90):
-        print('Categoria D')
-elif (altura < 1.20 and peso > 90):
-        print('Categoria G')
-
-if altura >= 1.20 and altura <= 1.70 and peso < 60:
-    print('Classificação B')
-elif (altura >= 1.20 and altura <= 1.70 and peso >= 60 and peso <= 90):
-        print('Categoria E')
-elif (altura >= 1.20 and altura <= 1.70 and peso > 90):
-        print('Categoria H')
-
-if altura > 1.70 and peso < 60:
-    print('Classificação C')
-elif (altura > 1.70 and peso >= 60 and peso <= 90):
-        print('Categoria F')
-elif (altura > 1.70 and peso > 90):
-        print('Categoria I')
+if peso < 60 and altura < 1.20:
+    print('Sua classificação é A')
+elif peso < 60 and 1.20 <= altura <= 1.70:
+    print('Sua classificação é B')
+elif peso < 60 and altura > 1.70:
+    print('Sua classificação é C')
+elif 60 <= peso < 90 and altura < 1.20:
+    print('Sua classificação é D')
+elif 60 <= peso < 90 and 1.20 <= altura <= 1.70:
+    print('Sua classificação é E')
+elif 60 <= peso < 90 and altura > 1.70:
+    print('Sua classificação é F')
+elif peso > 90 and altura < 1.20:
+    print('Sua classificação é G')
+elif peso > 90 and 1.20 <= altura <= 1.70:
+    print('Sua classificação é H')
+elif peso > 90 and altura > 1.70:
+    print('Sua classificação é I')
