@@ -1,11 +1,6 @@
-valor1 = 50--
-valor2 = 30 
-valor3 = 10
-quadrado1 = valor1 ** 2
-quadrado2 = valor2 ** 2
-quadrado3 = valor3 ** 2
-soma = (quadrado1+quadrado2+quadrado3)
-
-print("A soma dos quadrados é :" + str(soma))
-
-#################################################### #revisar
+print('Digite 3 valores para somar os quadrados:')
+n1 = int(input())
+n2 = int(input())
+n3 = int(input())
+soma = n1**2+n2**2+n3**2
+print('A soma dos quadrados dos numeros é:', soma)
