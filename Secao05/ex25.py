@@ -1,3 +1,17 @@
+'''Calcule as raızes da equacao de 2 
+o grau.
+Lembrando que:
+x =
+−b ±
+√
+∆
+2a
+Onde
+∆ = B
+2 − 4ac
+E ax2 + bx + c = 0 representa uma equacao de 2 
+o grau.'''
+
 a = float(input('Digite o valor A:'))
 b = float(input('Digite o valor B:'))
 c = float(input('Digite o valor C:'))

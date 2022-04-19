@@ -1,3 +1,11 @@
+'''Uma empresa vende o mesmo produto para quatro diferentes estados. Cada estado
+possui uma taxa diferente de imposto sobre o produto (MG 7%; SP 12%; RJ 15%; MS
+8%). Faca um programa em que o usuario entre com o valor e o estado destino do 
+produto e o programa retorne o preco final do produto acrescido do imposto do estado
+em que ele sera vendido. Se o estado digitado nao for valido, mostrar uma mensagem 
+de erro'''
+
+
 valor = float(input('Informe o valor do produto: '))
 estado = int(input('Informe um estado : 0[MG] - 1[SP] - 2[RJ] - 3[MS] : '))
 

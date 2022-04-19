@@ -1,3 +1,6 @@
+'''Peca ao usuario para digitar tres valores inteiros e imprima a soma deles.'''
+
+
 num1 =(int(input('Informe o primeiro numero: ')))
 num2 =(int(input('Informe o segundo numero: ')))
 num3 =(int(input('Informe o terceiro numero: ')))

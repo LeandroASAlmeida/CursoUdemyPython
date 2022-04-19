@@ -1,3 +1,6 @@
+'''Escreva um programa que, dados dois numeros inteiros, mostre na tela o maior deles, 
+assim como a diferenca existente entre ambos.'''
+
 num1 = int(input('Informe um valor: '))
 num2 = int(input('Informe outro valor: '))
 

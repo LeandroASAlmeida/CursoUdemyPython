@@ -1,3 +1,6 @@
+'''Faca um programa que receba a altura e o peso de uma pessoa. De acordo com a tabela
+a seguir, verifique e mostra qual a classificacao dessa pessoa.'''
+
 peso = float(input('Qual o seu peso em kg?'))
 altura = float(input('Qual a sua altura em metros?'))
 

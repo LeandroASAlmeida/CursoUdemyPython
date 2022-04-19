@@ -1,3 +1,8 @@
+'''Dados tres valores, A, B, C, verificar se eles podem ser valores dos lados de um triangulo 
+e, se forem, se e um triangulo escaleno, equil atero ou is oscele, considerando os seguin-
+tes conceitos:'''
+
+
 a = float(input('Informe um lado do triângulo: '))
 b = float(input('Informe um lado do triângulo: '))
 c = float(input('Informe um lado do triângulo: '))

@@ -1,3 +1,7 @@
+'''Faça um programa que leia um numero e, caso ele seja positivo, calcule e mostre: 
+• O numero digitado ao quadrado 
+• A raiz quadrada do numero digitado'''
+
 num = float(input('Informe um numero: '))
 
 if num >= 0:

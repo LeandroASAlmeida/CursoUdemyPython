@@ -1,3 +1,7 @@
+'''Leia um numero real. Se o numero for positivo imprima a raiz quadrada. Do contrario, 
+imprima o numero ao quadrado'''
+
+
 numero = float(input('Informe um numero real: '))
 
 if numero >= 0:

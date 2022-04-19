@@ -1,3 +1,6 @@
+'''Escreva um programa que, dada a idade de um nadador, classifique-o em uma das
+seguintes categorias:'''
+
 idade = int(input('Informe sua idade: '))
 
 if idade >= 5 and idade <= 7:

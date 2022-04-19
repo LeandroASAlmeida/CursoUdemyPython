@@ -1,3 +1,12 @@
+'''Escreva o menu de opcoes abaixo. Leia a opcao do usuario e execute a operacao escolhida. Escreva uma mensagem de erro se a opcao for invalida.
+Escolha a opcao:
+1- Soma de 2 numeros.
+2- Diferenca entre 2 numeros (maior pelo menor).
+3- Produto entre 2 numeros.
+4- Divis~ao entre 2 numeros (o denominador nao pode ser zero).
+Opcao'''
+
+
 opcao=float(input('Escolha a opção: \n'
                  '1-  Soma de 2 números.\n'
                  '2 - Diferença entre 2 números(maior pelo menor) \n'

@@ -1,3 +1,5 @@
+'''Faca um programa que receba tres numeros e mostre-os em ordem crescente'''
+
 num1= int(input('Informe um numero : '))
 num2= int(input('Informe outro numero : '))
 num3= int(input('Informe o ultimo numero : '))

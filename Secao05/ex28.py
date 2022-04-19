@@ -1,3 +1,6 @@
+'''Faca um programa que leia tres numeros inteiros positivos e efetue o calculo de uma das 
+seguintes medias de acordo com um valor numerico digitado pelo usuario:'''
+
 x = float(input('Digite o valor de X: '))
 y = float(input('Digite o valor de Y: '))
 z = float(input('Digite o valor de Z: '))
