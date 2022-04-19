@@ -1,13 +1,10 @@
 '''
 Faca um programa que leia 10 inteiros e imprima sua media. 
 '''
+soma = 0
 
-num = 0
-media= 0
-contador = 0
-num = int(input('Digite 10 numeros: [Lembre quando digitar os 10, digite 999 para encerrar] :'))
-while num != 999:
-    media += num /10
-    contador += num
-    num = int(input('Digite 10 numeros: [Lembre quando digitar os 10, digite 999 para encerrar] :'))
-print(f'A média é {media}')
+for n in range(10):
+    valor = int(input(f"Insira um valor ({n+1}/10):"))
+    soma = soma + valor
+
+print(f"A média entre estes valores é {soma/10}")
