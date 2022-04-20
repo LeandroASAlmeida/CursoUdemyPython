@@ -1,0 +1,46 @@
+'''
+Faca um algoritmo que encontre o primeiro multiplo de 11, 13 ou 17 apos um numero 
+dado
+'''
+
+'''num=int(input('Digite o numero: '))
+mult = 0
+
+if num != 0:
+    for n in range(num ,int('inf') ):
+        if n % 11 == 0:
+           print('multiplo por 11 é {}'.format(n))
+           break
+       
+    for x in range(num): 
+       if x % 13 == 0:
+           print('multiplo por 13 é {}'.format(x))
+           break
+
+    for c in range(num):
+        if c % 17 == 0:
+            print('multiplo por 17 é {}'.format(c))
+            break
+'''
+
+
+
+
+num = int(input("Insira um número: "))
+
+for n in range(num, 999999999):
+    if n % 11 == 0 or n % 13 == 0 or n % 17 == 0:
+        print(n)
+        break
+
+
+
+
+
+
+
+
+
+
+
+
