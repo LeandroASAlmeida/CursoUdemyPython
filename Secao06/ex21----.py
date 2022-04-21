@@ -6,32 +6,17 @@ tados;
 
 '''
 
-num1 = int(input('Informe um numero : '))
-num2 = int(input('Informe um segundo numero : '))
+print('Digite um intervalo')
+n1 = int(input('Digite o número menor n1: '))
+n2 = int(input('Digite o número maior n2: '))
 
-soma = 0 
-multiplicacao = 1
+soma_pares, produto_impares = 0, 1
 
-if num1 < num2: # Se não houver diferença de intervalo entre os numero digitados, caira no else "print('Não há intervalo entre os números.'"
-    for n in range(num1, num2+1):
-        if n % 2 == 0:# PAR
-            print(f"Número par: {n}.")
-            soma = soma + n
-    for n in range(num1, num2+1):
-        if n % 2 != 0: # IMPAR
-            print(f"Número impar: {n}.")
-            multiplicacao = multiplicacao * n
-elif num1 > num2:
-    for n in range(num2, num1+1):
-        if n % 2 == 0: # PAR
-            print(f"Número par: {n}.")
-            soma = soma + n
-    for n in range(num2, num1+1):
-        if n % 2 != 0:# IMPAR
-            print(f"Número impar: {n}.")
-            multiplicacao = multiplicacao * n
-else:
-    print('Não há intervalo entre os números.')
+for i in range(n1, n2+1):
+    if i % 2 == 0:
+        soma_pares += i
+    else:
+        produto_impares *= i
 
-print('A soma entre os números pares da diferença entre os números digitados é {}.' .format(soma))
-print('A multiplicação entre os números impares da diferença entre os números digitados é {}.'.format(multiplicacao))
+print(f'Soma dos pares: {soma_pares}')
+print(f'Produto dos ímpares: {produto_impares}')
