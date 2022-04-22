@@ -3,9 +3,6 @@ Escreva um algoritmo que leia um numero inteiro entre 100 e 999 e imprima na saÄ
 cada um dos algarismos que compoem o numero
 '''
 
-
-
-
 num = float(input('Digite um nÃºmero inteiro entre 100 e 999: '))
 
 while num < 100 :

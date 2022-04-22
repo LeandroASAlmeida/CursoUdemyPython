@@ -4,20 +4,20 @@ quantas vezes o maior numero foi lido. A quantidade de numeros a serem lidos dev
 fornecida pelo usuario
 '''
 
-qtde_numeros = int(input('Informe quantos números deseja digitar: '))
-maior, quantas_vezes = int(), 0
+qtd = int(input('Informe quantos números deseja digitar: '))
+qtd_vezes = 0
 
-for i in range(qtde_numeros):
+for i in range(qtd):
     num = int(input(f'Digite n{i + 1}: '))
     if i == 0:
-        maior = num
-        quantas_vezes = 1
+        maior = int(num)
+        qtd_vezes = 1
     else:
         if num > maior:
             maior = num
-            quantas_vezes = 1
+            qtd_vezes = 1
         elif num == maior:
-            quantas_vezes += 1
+            qtd_vezes += 1 # contador
 
-print(f'Maior número = {maior}')
-print(f'Número de vezes = {quantas_vezes}')
+print('Maior número = {}'.format(maior))
+print('Número de vezes = {}'.format(qtd_vezes))

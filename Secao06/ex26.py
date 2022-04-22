@@ -8,11 +8,13 @@ dado
 
 num = int(input('Digite um número inteiro: '))
 
-while True:
+while True: # quando achar o primeiro resultado. imprima
     num += 1
     if (num % 11 == 0) or (num % 13 == 0) or (num % 17 == 0):
         print(num)
         break
+
+
 
 
 

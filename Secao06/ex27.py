@@ -5,13 +5,15 @@ H(n) = 1 + 1/2 + 1/3 + 1/4 + ... + 1/n
 
 Faca um programa que leia um valor n inteiro e positivo e apresente o valor de H(n).
 '''
-h_n = float()
+n = int(input("Insira um valor N inteiro e positivo: "))
+h = 0
+hn = 0
 
-print('Encontrando o número harmônico H(n):')
-print('H(n) = 1 + 1/2 + 1/3 + 1/4 + ... + 1/n\n')
-n = int(input('Digite o valor de n: '))
+if n > 0:
+    for x in range(1, n+1):
+        h = 1 / x
+        hn = hn + h
+else:
+    print("Número invalido.")
 
-for i in range(1, n+1):
-    h_n += (1 / i)
-
-print(f'H(n) = {h_n}')
+print(f"O número harmônico de {n} é {hn:.2f}.")
