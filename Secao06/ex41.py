@@ -6,3 +6,24 @@ R =
 R1 ∗ R2
 R1 + R2
 '''
+
+r=0
+r1 = float(input('Informe o primeiro resistor :   '))
+r2 = float(input('Informe o segundo resistor :   '))
+
+
+while True:
+    r = (r1 * r2) / r1 + r2
+    print(f"A associação é {r}.")
+    r1 = int(input("Digite um valor R1: "))
+    if r1 == 0:
+        print('Digitado "0" e o programa sera encerrado')
+        break
+    r2 = int(input("Digite um valor R2: "))
+    if r2 == 0:
+        print('Digitado "0" e o programa sera encerrado')
+        break
+
+
+
+
