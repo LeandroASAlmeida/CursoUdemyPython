@@ -4,24 +4,21 @@ para finalizar o programa. O usuario poder a fazer quantas conversoes desejar, s
 que o programa so sera finalizado quando a op de finalizar for escolhida'''
 
 
+while True:
+    print('CONVERSOR DE VELOCIDADE'.center(40,'-'))
+    print('|[A]- KM/H para M/S '.ljust(20,' ') + '[B]- M/S para KM/H '.ljust(20,' ') + '|')
+    print('|[Q]- FINALIZAR '.ljust(20,' ') + '|\n')
+    opcao = ''
+    while opcao != 'A' and opcao != 'B' and opcao != 'Q':
+        opcao = input('Insira a opção desejada: ')
 
-
-print('CONVERSOR DE VELOCIDADE'.center(40,'-'))
-print('|1- KM/H para M/S '.ljust(20,' ') + '2- M/S para KM/H '.ljust(20,' ') + '|')
-print('|3- FINALIZAR '.ljust(20,' ') + '|\n')
-op = int(input('Qual sua Operação desejada?: '))
-
-
-while op != 3:
-    if op == 1:
+    if opcao == 'A':
         velo = float(input('km/h: '))
         print(f'm/s = {velo/3.6}\n')
-    sair=(input('Deseja Sair?':1[Sim]ou 2[Não]))
-        
-    elif op == 5:
+    elif opcao == 'B':
         velo = float(input('m/s: '))
         print(f'km/h = {velo*3.6}\n')
     else:
-        print('Opção Invalida')
-if op == 3:
-    print('Obrigado e até a próxima!')
+        print('PROGRAMA ENCERRADO!')
+        break
+
