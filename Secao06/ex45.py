@@ -6,16 +6,16 @@ que o programa so sera finalizado quando a op de finalizar for escolhida'''
 
 while True:
     print('CONVERSOR DE VELOCIDADE'.center(40,'-'))
-    print('|[A]- KM/H para M/S '.ljust(20,' ') + '[B]- M/S para KM/H '.ljust(20,' ') + '|')
-    print('|[Q]- FINALIZAR '.ljust(20,' ') + '|\n')
+    print('|[1]- KM/H para M/S '.ljust(20,' ') + '[2]- M/S para KM/H '.ljust(20,' ') + '|')
+    print('|[3]- FINALIZAR '.ljust(20,' ') + '|\n')
     opcao = ''
-    while opcao != 'A' and opcao != 'B' and opcao != 'Q':
-        opcao = input('Insira a opção desejada: ')
+    while opcao != 1 and opcao != 2 and opcao != 3:
+        opcao = int(input('Insira a opção desejada: '))
 
-    if opcao == 'A':
+    if opcao == 1:
         velo = float(input('km/h: '))
         print(f'm/s = {velo/3.6}\n')
-    elif opcao == 'B':
+    elif opcao == 2:
         velo = float(input('m/s: '))
         print(f'km/h = {velo*3.6}\n')
     else:

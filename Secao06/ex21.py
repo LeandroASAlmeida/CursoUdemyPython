@@ -7,16 +7,16 @@ tados;
 '''
 
 print('Digite um intervalo')
-n1 = int(input('Digite o número menor n1: '))
-n2 = int(input('Digite o número maior n2: '))
+n1 = int(input('Digite o número : '))
+n2 = int(input('Digite o número : '))
 
-soma_pares, produto_impares = 0, 1
+soma_pares, multi_impares = 0, 1
 
 for i in range(n1, n2+1):
     if i % 2 == 0:
         soma_pares += i
     else:
-        produto_impares *= i
+        multi_impares *= i
 
 print(f'Soma dos pares: {soma_pares}')
-print(f'Produto dos ímpares: {produto_impares}')
+print(f'Multiplicação dos ímpares: {multi_impares}')

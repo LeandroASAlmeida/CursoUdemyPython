@@ -8,7 +8,7 @@ qtd = int(input('Informe quantos números deseja digitar: '))
 qtd_vezes = 0
 
 for i in range(qtd):
-    num = int(input(f'Digite n{i + 1}: '))
+    num = int(input(f'Digite n{i + 1}: '))# contador da string "n0"
     if i == 0:
         maior = int(num)
         qtd_vezes = 1
