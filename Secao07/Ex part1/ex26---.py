@@ -4,8 +4,6 @@ onde m e a media do vetor.
 
 '''
 
-from statistics import variance
-
 
 v=[]
 media=0

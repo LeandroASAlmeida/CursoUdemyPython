@@ -4,11 +4,11 @@ de cada elemento. Em seguida, imprima na tela a matriz.'''
 
 matriz=[[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]
 
-for l in range(5):
-    for c in range(4):
+for l in range(0,5):
+    for c in range(0,5):
         matriz[l][c] = l * c
 
-for l in range(4):
-    for c in range(4):
+for l in range(0,5):
+    for c in range(0,5):
         print(matriz[l][c], end=' ')
     print( )
