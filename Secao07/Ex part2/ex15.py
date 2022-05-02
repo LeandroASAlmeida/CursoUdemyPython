@@ -4,9 +4,41 @@ respostas que podem ser a, b, c ou d. Seu programa devera comparar as respostas
 de cada candidato com o gabarito e emitir um vetor denominado resultado, contendo a
 pontuacao correspondente a cada aluno.'''
 
-matriz = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+respostas = [[],[],[],[],[]]
+gabarito = ('a', 'b', 'c', 'd')
+acertos= []
+pontos = [0, 0, 0, 0, 0]
 
-for l in range(5):
-    for c in range(10):
-        matriz[l][c] = int(input(f'Digite um valor para a Matriz 0 [{l},{c}]: '))
+for l in range(0,5):
+    print(f'Digite as respostas do Aluno:{l}: ')
+    for c in range(0,10):
+        res = ''
+        while res not in gabarito:
+            res = input(f'{c}: ')
+        respostas[l].append(res)
+
+print('-=' * 30) # linha de separação
+print('\nDigite as respostas corretas')
+print('-=' * 30) # linha de separação
+
+for l in range(0,10):
+    res = ''
+    while res not in gabarito:
+        res = input(f'{l}: ')
+    acertos.append(res)
+
+for l in range(0,5):
+    for c in range(0,10):
+        if acertos[c] == respostas[l][c]:
+            pontos[l] += 1
+
+
+print('\nPontuação final')
+print('-=' * 30) # linha de separação
+
+for l in range(0,5):
+    print(f'Aluno {l}: {pontos[l]} pontos.')
+    print('-=' * 30) # linha de separação
+for c in range(0,5):
+    for c in range(0,10):
+        print(f'[{respostas[l][c]:^5}]', end ='')
