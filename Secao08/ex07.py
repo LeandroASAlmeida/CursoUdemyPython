@@ -4,3 +4,9 @@ em graus Fahrenheit. A formula de conversaoe:F = C ∗ (9.0/5.0) + 32.0, sendo F
 temperatura em Fahrenheit e C a temperatura em Celsius.
 
 '''
+
+def converte(c):
+    return c * (9/5) + 32
+print("Informe a temperatura em °C: ",end="")
+grau = float(input())
+print(f"\n Celsius: {grau}°C \n Fahrenheit: {converte(grau)}°F")

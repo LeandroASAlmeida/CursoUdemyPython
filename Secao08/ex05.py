@@ -4,7 +4,10 @@ V = 4/3 ∗ π ∗ R3'''
 
 
 # π = 3.14
-def volume(raio):
-    raio_parametro = float(input("Informe o raio da esfera: "))
-    return (4/3) * 3.14 * (raio ** 3)
-
+def vol_esfera(raio):
+    if raio < 1:
+        return "Raio Invalido"
+    return (4 * 3.14 * (raio ** 3)) / 3
+print("Informe o raio da esfera: ", end=" ")
+r = float(input())
+print(f"\n Volume: {vol_esfera(r):.2f}")
