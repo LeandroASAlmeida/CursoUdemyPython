@@ -26,7 +26,7 @@ print(quadrado(7))
 print(quadrado(2))
 print(quadrado(5))
 
-ret = quadrado(6)
+def = quadrado(6)
 print(ret)
 
 print(quadrado())  # TypeError

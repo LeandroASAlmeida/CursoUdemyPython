@@ -14,7 +14,7 @@ m = sum(v) / n # soma da lista
 
 quadrado = 0
 for i in v:
-    quadrado += (i - m) ** 2
+    quadrado += (i - m) ** 2 # elevado ao quadrado
 
 desvio = (quadrado / n) ** 0.5
 
