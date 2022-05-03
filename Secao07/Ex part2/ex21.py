@@ -10,9 +10,6 @@ zenado na propria matriz.'''
 
 matriz_1 = [[0,0],[0,0]]
 matriz_2 = [[0,0],[0,0]]
-soma=float()
-subtrair= float()
-const=float()
 matriz_soma = [[0,0],[0,0]]
 matriz_sub = [[0,0],[0,0]]
 constante = 0
@@ -34,7 +31,7 @@ while menu != 0:
         print('Somar as duas matrizes selecionado. ')
         print('MATRIZ SOMA')
         for l in range(0,2):
-            for c in range(2):
+            for c in range(0,2):
                 matriz_soma[l][c] = matriz_1[l][c] + matriz_2[l][c]
                 print(f'[{matriz_soma[l][c]:^4}]', end='')
             print()
@@ -44,11 +41,12 @@ while menu != 0:
         menu = input('[a]Somar as duas matrizes\n[b]Subtrair a primeira matriz da segunda\n'
              '[c]Adicionar uma constante as duas matrizes\n[d]Imprimir as matrizes\n'
              'opção: ')
+
     elif menu == 'b':
         print('Subtrair as duas matrizes selecionado. ')
         print('MATRIZ SUBTRAÇÃO')
         for l in range(0,2):
-            for c in range(2):
+            for c in range(0,2):
                 matriz_sub[l][c] = matriz_1[l][c] - matriz_2[l][c]
                 print(f'[{matriz_sub[l][c]:^4}]', end='')
             print()
@@ -58,21 +56,26 @@ while menu != 0:
         menu = input('[a]Somar as duas matrizes\n[b]Subtrair a primeira matriz da segunda\n'
              '[c]Adicionar uma constante as duas matrizes\n[d]Imprimir as matrizes\n'
              'opção: ')
-    #elif menu == 'c':
-        #constante = (input('\nDigite a constante: '))
 
-    #print(f'\nA + {constante}')
-    #for l in range(2):
-        #for c in range(2):'''
+    elif menu == 'c':
+        constante = int(input("Digite uma constante a ser incluida: "))
+        for l in range(0,2):
+            for c in range(0,2):
+                matriz_1[l][c] += constante
+                matriz_2[l][c] += constante
+                print(f'[{matriz_1[l][c]:^4}]', end='')
+                print(f'[{matriz_2[l][c]:^4}]', end='')
+            print()
+
     elif menu == 'd':
         print('MATRIZ 1')
         for l in range(0,2):
-            for c in range(2):
+            for c in range(0,2):
                 print(f'[{matriz_1[l][c]:^4}]', end='')
             print()
         print('MATRIZ 2')
         for l in range(0,2):
-            for c in range(2):
+            for c in range(0,2):
                 print(f'[{matriz_2[l][c]:^4}]', end='')
             print()
         print('-=' * 30) # linha de separação
