@@ -4,3 +4,11 @@ varios sımbolos de igual (Ex: ========). A funcao recebe por parametro quantos 
 de igual serao mostrados. 
 
 '''
+
+def desenha_linha(igual):
+    return '=' * igual
+
+print("Informe quantos sinais de '=', devem ser impressos: ", end=" ")
+quant = int(input())
+print(desenha_linha(quant))
+

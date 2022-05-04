@@ -12,3 +12,22 @@ iguais.
 • Recebe o nome de escaleno o triangulo que tem os tres lados diferentes.
 
 '''
+
+def triangulo(med1,med2,med3):
+    if med1 - med2 < med3 < med2 + med1:
+        if med1 == med2 == med3:
+            return 'Equilátero'
+        
+        elif med1 == med2 or med3 == med1:
+            return 'Isósceles'
+        else:
+            return 'Escaleno'
+    return "triangulo invalido."
+
+print("Informe a primeira medida: ", end=" ")
+m1 = float(input())
+print("Informe a segunda medida: ", end=" ")
+m2 = float(input())
+print("Informe a terceira medida: ", end=" ")
+m3 = float(input())
+print(f"\n Triangulo {m1} , {m2} , {m3} é  {triangulo(m1,m2,m3)}")

@@ -13,8 +13,7 @@ def positivo_negativo(numero):
 
     return 0
 
-
-num = int(input("Enter a number: "))
+num = int(input("Informe um numero: "))
 
 print(f"\n{positivo_negativo(num)}")
 

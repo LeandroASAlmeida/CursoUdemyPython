@@ -7,3 +7,13 @@ com pontos de exclamacao, conforme o exemplo abaixo (para n = 5):
 !!!!
 !!!!!
 '''
+
+def vlr_int(num):
+    lista = list()
+    for i in range(num+1):
+        lista.append("!"*i)
+    return lista
+print("Informe um numero inteiro: ", end=" ")
+num = int(input())
+for item in vlr_int(num):
+    print(item)

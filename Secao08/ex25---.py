@@ -4,3 +4,5 @@ da seguinte serie:
 S = 2/4 + 5/5 + 10/6 + ... + (N2 + 1)/(N + 3)
 
 '''
+
+def serie(n):

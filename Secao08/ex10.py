@@ -1,12 +1,12 @@
 '''
-10. Faca uma funcao que receba dois numeros e retorne qual deles  e o maior.
+10. Faca uma funcao que receba dois numeros e retorne qual deles e o maior.
 
 '''
 
-def maior(a, b):
-    if a > b:
-        return f"Maior: {a}"
-    return f"Maior: {b}"
+def maior(num1, num2):
+    if num1 > num2:
+        return f"Maior: {num1}"
+    return f"Maior: {num2}"
 print("Informe o 1° numero: ", end=" ")
 n1 = float(input())
 print("Informe o 2° numero: ", end=" ")
