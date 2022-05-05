@@ -7,3 +7,14 @@ n
 
 
 '''
+
+def expo_fat(n):
+   x = 1
+   for i in range(n-1):
+        x *=  n ** n-i
+   return x
+
+print("Informe um numero inteiro e positivo: ", end=" ")
+num = int(input())
+print(f"HiperFatorial: {expo_fat(num)}")
+

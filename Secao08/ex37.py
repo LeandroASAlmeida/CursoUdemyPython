@@ -13,3 +13,14 @@ n
 
 
 '''
+
+def hiper_fat(n):
+   x = 1
+   for i in range(1, n+1):
+        x = x * (i ** i)
+        return x
+print("Informe um numero inteiro e positivo: ", end=" ")
+num = int(input())
+print(f"HiperFatorial: {hiper_fat(num)}")
+
+
