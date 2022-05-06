@@ -16,10 +16,12 @@ def par_impar(x):
     print(f'Vetor Par = {vetor_par}\nVetor Impar = {vetor_impar}')
         
 if __name__ == '__main__':
+    
     cont = 0
     x=[]
     while (len(x) < 30):
         cont +=1
-        n=int(input(f'Informe o {cont}° do VetorX :'))
+        n=int(input(f'Informe o {cont}° numero do VetorX :'))
         x.append(n)
-    par_impar(x)
+   
+   

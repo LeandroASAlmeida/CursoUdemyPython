@@ -1,50 +1,60 @@
 '''
-45. Crie um programa contendo as seguintes funcoes que recebem um vetor V numeros re- 
+45. Crie um programa contendo as seguintes funcoes que recebem um v V numeros re- 
 ais como parametro: 
-• Impressao normal do vetor. 
+• Impressao normal do v. 
 • Impressao inversa. 
-• Funcao que retorna a media aritmetica dos elementos do vetor.
+• Funcao que retorna a media aritmetica dos elementos do v.
 '''
-def imprimir_normal(args):
+def imprimir_normal(v):
 
-    numeros = True
-    for i in args:
+    valor = True
+    for i in v:
         if not(type(i) == int or type(i) == float):
-            numeros = False
+            valor = False
 
-    if numeros:
-        print(f"Vetor normal: {args}")
+    if valor:
+        print(f"Imprimir_normal : {v}")
     else:
         print("Apenas números!")
 
 
-def imprimir_inverso(args):
+def imprimir_inverso(v):
   
 
-    numeros = True
-    for i in args:
+    valor = True
+    for i in v:
         if not(type(i) == int or type(i) == float):
-            numeros = False
+            valor = False
 
-    if numeros:
-        print(f"Vetor inverso: {args[::-1]}")
+    if valor:
+        print(f"Imprimir_inverso : {v[::-1]}")
     else:
         print("Apenas números!")
+        
 
+def media_v(v):
 
-def media_vetor(args):
-
-    numeros = True
-    for i in args:
+    valor = True
+    for i in v:
         if not (type(i) == int or type(i) == float):
-            numeros = False
+            valor = False
 
-    if numeros:
-        return sum(args) / len(args)
+    if valor:
+        print(f"A media aritmetica do v é : {sum(v) / len(v)}")
+       
 
+if __name__ == '__main__':
+    
+    print("Qual será o tamanho do vetor V?: ", end=" ")
+tam = int(input())
+v = []
 
-imprimir_normal([12, 324, 435.345, 53.65, 34.543, 23.56, 234, 564, 45, 321])
-imprimir_inverso([12, 324, 435.345, 53.65, 34.543, 23.56, 234, 564, 45, 321])
-print(f"Média aritmética do vetor: {media_vetor([12, 324, 435.345, 53.65, 34.543, 23.56, 234, 564, 45, 321])}")
+for i in range(tam):
+    print("Informe o ", i+1 ,"° numero do vetor V: ", end=" ")
+    valor = float(input())
+    v.append(valor)
+imprimir_normal(v)
+imprimir_inverso(v)
+media_v(v)
 
 
