@@ -7,3 +7,14 @@ Exemplo:
 -1 1 1
 -1 -1 0
  0 1 0'''
+
+jogador1=-1
+jogador2=1
+
+velha = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+print('-=' * 30) # linha de separação
+for l in range(0,3):
+    for c in range(0,3):
+        print(f'[{velha[l][c]:^5}]', end ='')
+    print()
+print('-=' * 30) # linha de separação

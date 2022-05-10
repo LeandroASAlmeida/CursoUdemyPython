@@ -13,8 +13,9 @@ def expo_fat(n):
    for i in range(n-1):
         x *=  n ** n-i
    return x
+if __name__ == '__main__':
 
-print("Informe um numero inteiro e positivo: ", end=" ")
-num = int(input())
-print(f"HiperFatorial: {expo_fat(num)}")
+   print("Informe um numero inteiro e positivo: ", end=" ")
+   num = int(input())
+   print(f"HiperFatorial: {expo_fat(num)}")
 

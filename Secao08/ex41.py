@@ -9,14 +9,15 @@ def maior_num(vetor):
             maior = i
     return maior
 
+if __name__ == '__main__':
 
-print("Qual será o tamanho do vetor?: ", end=" ")
-tam = int(input())
-vetor = []
-print("\n")
-for i in range(tam):
-    print("Informe o ", i+1 ,"° numero do vetor: ", end=" ")
-    valor = int(input())
-    vetor.append(valor)
-print(f"O maior elemento da lista é o", maior_num(vetor))
+    print("Qual será o tamanho do vetor?: ", end=" ")
+    tam = int(input())
+    vetor = []
+    print("\n")
+    for i in range(tam):
+        print("Informe o ", i+1 ,"° numero do vetor: ", end=" ")
+        valor = int(input())
+        vetor.append(valor)
+    print(f"O maior elemento da lista é o", maior_num(vetor))
 

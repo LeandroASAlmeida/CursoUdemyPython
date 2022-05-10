@@ -12,8 +12,11 @@ def super_fat(n):
         for a in range(1, i+1):
             fat *= a
     return fat
-print("Informe um numero inteiro e positivo: ", end=" ")
-num = int(input())
-print(f"Super Fatorial: {super_fat(num)}")
+
+if __name__ == '__main__':
+
+    print("Informe um numero inteiro e positivo: ", end=" ")
+    num = int(input())
+    print(f"Super Fatorial: {super_fat(num)}")
 
 

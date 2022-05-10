@@ -24,10 +24,11 @@ def num_aleat(qtd):
                 cont+=1
     return valor_ale
 
+if __name__ == '__main__':
 
-os.system('cls')
-qtd = int(input("Informe o tamanho da lista : "))
-print(num_aleat(qtd))
+    os.system('cls')
+    qtd = int(input("Informe o tamanho da lista : "))
+    print(num_aleat(qtd))
 
 
 

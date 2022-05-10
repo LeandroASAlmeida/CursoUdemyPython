@@ -11,7 +11,10 @@ def fatorial_duplo(n):
     for i in range(1, n + 1,2):
         soma *= i
     return soma
-print("Informe um numero inteiro e positivo: ", end=" ")
-num = int(input())
-print(f"Fatorial duplo: {fatorial_duplo(num)}", end=" ")
+
+if __name__ == '__main__':
+
+    print("Informe um numero inteiro e positivo: ", end=" ")
+    num = int(input())
+    print(f"Fatorial duplo: {fatorial_duplo(num)}", end=" ")
 

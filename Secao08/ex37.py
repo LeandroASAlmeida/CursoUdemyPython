@@ -19,8 +19,11 @@ def hiper_fat(n):
    for i in range(1, n+1):
         x = x * (i ** i)
         return x
-print("Informe um numero inteiro e positivo: ", end=" ")
-num = int(input())
-print(f"HiperFatorial: {hiper_fat(num)}")
+
+if __name__ == '__main__':
+        
+        print("Informe um numero inteiro e positivo: ", end=" ")
+        num = int(input())
+        print(f"HiperFatorial: {hiper_fat(num)}")
 
 
