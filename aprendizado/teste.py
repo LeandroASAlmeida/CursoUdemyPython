@@ -1,15 +1,15 @@
-paises = ['', 'Argentina', '', 'Brasil', 'Chile', '', 'Colombia', '', 'Equador', '', '', 'Venezuela']
+import os
+import tempfile
 
-print(paises)
 
-res = filter(None, paises)
+arquivo = tempfile.NamedTemporaryFile()
+arquivo.write(b'Geek University\n')
 
-print(list(res))
+print(arquivo.name)
 
-paises = ['', 'Argentina', '', 'Brasil', 'Chile', '', 'Colombia', '', 'Equador', '', '', 'Venezuela']
+print(arquivo.read())
 
-# res = filter(lambda pais: len(pais) > 0, paises)
-# res = filter(None, paises)
-res = filter(lambda pais: pais != '', paises)
 
-print(list(res))
+input()
+
+arquivo.close()

@@ -1,0 +1,7 @@
+Laranja
+pera
+uva
+abacate
+tangerina"C:/Program Files/Python39/python.exe" c:/Users/aprde/Desktop/CursoUdemyPython/aprendizado/teste.py
+abacate
+tangerina
