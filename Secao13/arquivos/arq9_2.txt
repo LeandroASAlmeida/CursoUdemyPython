@@ -1,0 +1,1 @@
+O ideal seria simplesmente dizer para o Python, ao importar o arquivo, não executar aquilo ali. Será que é possível fazer isso?

@@ -18,7 +18,7 @@ def triangulo(med1,med2,med3):
         if med1 == med2 == med3:
             return 'Equilátero'
         
-        elif med1 == med2 or med3 == med1:
+        elif med1 == med2 or med3 == med1 or med2 == med3:
             return 'Isósceles'
         else:
             return 'Escaleno'

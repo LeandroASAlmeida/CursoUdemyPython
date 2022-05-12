@@ -1,0 +1,5 @@
+Como desenvolvedor Python, é possível que você já tenha se deparado com esse trecho de código, mas você sabe o que ele significa?
+Achei um programa em Python na internet com várias funções relacionadas a dados e taxas de moedas
+que podem me ajudar no meu projeto pessoal de criar um conversor de moedas.
+Baixei, então, o arquivo info_moedas.py, para utilizá-lo em meu projeto, especialmente uma função
+que pega a taxa atual de conversão entre duas moedas (get_taxa_conversao()). O arquivo principal do meu programa ficou assim:

@@ -10,6 +10,7 @@ def vetor_pares(vetor):
         if i % 2 == 0:
             cont +=1
     return cont
+    
 if __name__ == '__main__':
 
     print("Qual será o tamanho do vetor?: ", end=" ")

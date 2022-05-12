@@ -1,0 +1,2 @@
+No Python, temos uma convenção idiomática para solucionar problemas como o do nosso tipo,em que precisamos que um código não execute se estiver sendo apenas importado.
+O ideal seria simplesmente dizer para o Python, ao importar o arquivo, não executar aquilo ali. Será que é possível fazer isso?

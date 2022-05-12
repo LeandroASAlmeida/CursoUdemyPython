@@ -4,7 +4,8 @@ hipotenusa =
 √
 a
 2 + b
-2. Faca uma funcao que receba os valores de a e b e calcule o
+2. 
+Faca uma funcao que receba os valores de a e b e calcule o
 valor da hipotenusa atraves da equacao. 
 
 '''

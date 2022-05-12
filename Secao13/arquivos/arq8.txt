@@ -1,0 +1,2 @@
+Arquivo criado pois nao existia
+Texto Lorem Ipsum pode ser utilizado para voce que esta desenvolvendo seu projeto e precisa de texto aleatorio para preencher os espacos e fazer testes

@@ -9,8 +9,7 @@ def m_transposta(n):
     for l in range(0,3):
         for c in range(0,3):
            
-
-    return transposta
+        return transposta
             
 
 if __name__ == '__main__':
