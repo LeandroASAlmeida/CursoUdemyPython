@@ -1,0 +1,6 @@
+FEIJAO:    8
+ARROZ:     9
+MACARRAO:  7
+OVOS:      6
+FRUTAS:    9
+GELEIA:    5

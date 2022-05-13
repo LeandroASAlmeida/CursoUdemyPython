@@ -1,0 +1,10 @@
+Leandro                                  9.0
+Joao                                     8.0
+Maria                                    6.0
+Jose                                     5.0
+Paulo                                    2.0
+Pedro                                    10.0
+Caio                                     8.0
+Mary                                     8.0
+Juca                                     4.0
+Lilian                                   6.0

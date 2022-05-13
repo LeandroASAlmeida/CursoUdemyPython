@@ -1,0 +1,6 @@
+Belem                9855212.0
+Blumenau             231213165.0
+Joinville            231465687984.0
+Florianopolis        741156522.0
+Sao Paulo            1321684894561321.0
+Rio De Janeiro       21212165465416.0
