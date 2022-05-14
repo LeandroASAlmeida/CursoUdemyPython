@@ -17,14 +17,14 @@ saida:
 1 1 1
 """
 
-nome_arquivo = str(input("Digite o caminho do arquivo ou o seu nome "
-                         "(caso o arquivo esteja no mesmo local do programa): "))
+nome_arquivo = str(input("Digite o caminho do arquivo ou o seu nome: "))
 
 nome_arquivo = nome_arquivo if ".txt" in nome_arquivo else nome_arquivo+".txt"
 
 try:
 
     with open(nome_arquivo, "r", encoding="utf-8") as arquivo:
+
         # Removendo as quebras de linhas e os espaços desnecessários
         # do início e final do arquivo e criando um vetor
         # onde cada elementos é uma linha do arquivo
@@ -68,7 +68,9 @@ try:
         with open("arquivos/matriz_saida.txt", "w", encoding="utf-8") as novo_arquivo:
 
             for vetor in matriz:
+
                 for elemento in vetor:
+
                     novo_arquivo.write(f"{elemento} ")
 
                 novo_arquivo.write("\n")

@@ -1,0 +1,43 @@
+'''
+29. Faca uma funcao que receba como parametro o valor de um angulo em graus e calcule 
+o valor do seno hiperbolico desse  angulo usando sua respectiva serie de Taylor: 
+sinh x =
+P∞
+n=0
+x
+2n+1
+(2n+1)! = x +
+x
+3
+3! +
+x
+5
+5! + . . . para todo x,
+onde x e o valor do angulo em radianos. Considerar  π = 3.141593 e n variando de 0
+ate 5
+
+'''
+
+from math import factorial
+
+def seno_hiperbolico(angulo):
+
+    if angulo > 0:
+        pi = 3.141593
+        x = angulo * pi / 180
+        senh = 0
+
+        for n in range(6):
+            numerador = x ** (2 * n + 1)
+            denominador = factorial(2 * n + 1)
+            senh += numerador / denominador
+
+        return f"{angulo}° em radianos: {x}" \
+               f"\nSeno hiperbólico de {x}: {senh}"
+
+    return "Valor inválido"
+
+if __name__ == '__main__':
+
+    angulo = int(input("Digite o valor do ângulo em graus: "))
+    print(f"\n{seno_hiperbolico(angulo)}")

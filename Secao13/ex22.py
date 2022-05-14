@@ -6,8 +6,14 @@ e três inteiros que indicam suas notas. O programa deverá ler o arquivo de ent
 
 """
 
-arquivo_entrada = str(input("Digite o caminho do arquivo de entrada ou o seu nome "
-                            "(caso o arquivo esteja no mesmo local do programa): "))
+
+
+
+
+
+#arquivos\aluno_notas_saida.txt
+
+arquivo_entrada = str(input("Digite o caminho do arquivo de entrada ou o seu nome: "))#arquivos\aluno_notas.txt
 
 arquivo_entrada = arquivo_entrada if ".txt" in arquivo_entrada else arquivo_entrada+".txt"
 

@@ -248,7 +248,7 @@ def relatorio(arquivo):
             pass
 
         with open(arquivo, "rb") as leitura:
-            print(f"\n\n{'-' * 51}RELATÓRIO GERAL{'-' * 51}")
+            print(f"\n\n{'-' * 13}RELATÓRIO GERAL{'-' * 13}")
 
             texto = leitura.read().decode("utf-8").strip().splitlines()
 

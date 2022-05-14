@@ -474,7 +474,7 @@ if __name__ == "__main__":
             time.sleep(3)
             os.system('cls')
 
-            print(f"\n\n{'+' * 13} AGENDA {'+' * 14}")
+            print(f"\n\n{'+' * 11} AGENDA {'+' * 11}")
             print("1 - Inserir um contato")
 
             print(f"{'-' * 30}")
