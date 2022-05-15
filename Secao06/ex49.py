@@ -8,21 +8,17 @@ necessarios para que o valor pertencente a Joao iguale ou ultrapasse o valor per
 a Carlos. Teste com outros valores para as taxas.
 
 '''
-sal_carlos=float(input('Informe o salário atual de Carlos : '))
-sal_joao = sal_carlos / 3
-meses = 0
-rend_carlos = 0 #investimento Carlos
-rend_joao = 0 #investimento João
-rend_carlos = (rend_carlos + sal_carlos) * 1.02
-rend_joao = (rend_joao + sal_joao) * 1.05
+salario_carlos = float(input('Informe o salário de Carlos: '))
+salario_joao = salario_carlos / 3
 
-while rend_joao < rend_carlos:# Enquanto o investimento do joão for menor do que do Carlos
-    rend_carlos = sal_carlos * (1.02 ** meses)
-    rend_joao  = sal_joao *(1.05 ** meses)
-    meses += 1
+for i in range(1, 100):
+    salario_carlos += salario_carlos * 0.02
+    salario_joao += salario_joao * 0.05
 
-    if rend_joao >= rend_carlos:
-        print(f'joão alcança carlos depois de {meses} meses.')
+    if salario_joao >= salario_carlos:
+        print('João: R$%.2f' % salario_joao) #2f um espaço reservado para o número de ponto flutuante 
+        print('Carlos: R$%.2f' % salario_carlos)
+        print(f"Leva {i} meses para o salário de João igualar ou exceder"
+              f" o de Carlos")
         break
-
 
