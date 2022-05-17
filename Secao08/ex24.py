@@ -15,6 +15,9 @@ def triangulo(n):
         print(" " * int(((n*2)-i)/2),end=" ")
         print("*" * i)
     return "\n"
-print("Informe um numero: ", end=" ")
-num = int(input())
-print(triangulo(num))
+
+if __name__ == '__main__': #checagem de escopo de execução
+
+    print("Informe um numero: ", end=" ")
+    num = int(input())
+    print(triangulo(num))

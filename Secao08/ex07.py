@@ -7,6 +7,9 @@ temperatura em Fahrenheit e C a temperatura em Celsius.
 
 def converte(c):
     return c * (9/5) + 32
-print("Informe a temperatura em °C: ",end="")
-grau = float(input())
-print(f"\n Celsius: {grau}°C \n Fahrenheit: {converte(grau)}°F")
+
+if __name__ == '__main__': #checagem de escopo de execução
+
+    print("Informe a temperatura em °C: ",end="")
+    grau = float(input())
+    print(f"\n Celsius: {grau}°C \n Fahrenheit: {converte(grau)}°F")

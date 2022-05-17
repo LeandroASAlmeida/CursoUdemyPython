@@ -39,7 +39,7 @@ estes objetos que serão mapeados para classes de entidade.
 """
 
 
-class Lampada:
+class Lampada: #classes SEMPRE COMEÇAR COM MAISCULO
     pass
 
 
@@ -59,7 +59,7 @@ class Int:
     pass
 
 
-valor = int('42')  # cast
+valor = int('42')  # cast  conversao de string para int
 
 print(help(int))
 

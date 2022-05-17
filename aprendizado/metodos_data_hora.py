@@ -107,9 +107,9 @@ def formata_data(data):
 
 hoje = datetime.datetime.today()
 
-print(formata_data(hoje))
+hoje_formatado = hoje.strftime('%d/%b/%Y') #mostrar data no formataod brasileiro ('%d/%b/%Y') = 17/May/2022 /  ('%d/%m/%Y') = 17/05/2022
 
-nascimento = datetime.datetime.strptime('10/04/1998', '%d/%m/%Y')
+print(hoje_formatado)
 
 print(nascimento)
 

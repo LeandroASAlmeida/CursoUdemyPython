@@ -13,9 +13,12 @@ def soma(num):
     for i in range(len(num)):
         r += int(num[i])
     return r
-print("Informe um numero inteiro: ", end=" ")
-n = int(input())
-if n < 1:
-    print(f"{n} e invalido.")
-else:
-    print(f"Soma dos algoritimos de {n} e {soma(n)}")
+
+if __name__ == '__main__': #checagem de escopo de execução
+    
+    print("Informe um numero inteiro: ", end=" ")
+    n = int(input())
+    if n < 1:
+        print(f"{n} e invalido.")
+    else:
+        print(f"Soma dos algoritimos de {n} e {soma(n)}")

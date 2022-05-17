@@ -4,4 +4,4 @@
 
 num2 =float(input('Informe um numero real: '))
 qp = num2 * (1/5)
-print('A quinta parte de {:.2f} é {:.2f}'.format(num2, qp))
+print(f'A quinta parte de {num2:.2f} é {qp:.2f}')

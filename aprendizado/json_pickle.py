@@ -10,7 +10,7 @@ API -> São meios de comunicação entre os serviços oferecidos por empresas
 import json
 
 
-ret = json.dumps(['produto', {'PlayStation 4': ('2TB', 'Novo', '220V', 2340)}])
+ret = json.dumps(['produto', {'PlayStation 4': ('2TB', 'Novo', '220V', 2340)}]) # (dumps) formata o codigo pois JSON nao aceita aspas simples somente aspas duplas.
 
 print(type(ret))
 

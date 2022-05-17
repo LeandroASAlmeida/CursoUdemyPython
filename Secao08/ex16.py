@@ -8,7 +8,9 @@ de igual serao mostrados.
 def desenha_linha(igual):
     return '=' * igual
 
-print("Informe quantos sinais de '=', devem ser impressos: ", end=" ")
-quant = int(input())
-print(desenha_linha(quant))
+if __name__ == '__main__': #checagem de escopo de execução
+
+    print("Informe quantos sinais de '=', devem ser impressos: ", end=" ")
+    quant = int(input())
+    print(desenha_linha(quant))
 

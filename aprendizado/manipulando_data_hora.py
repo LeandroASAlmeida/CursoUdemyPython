@@ -72,5 +72,5 @@ print(evento.minute)  # minuto
 print(evento.second)  # segundo
 print(evento.microsecond)  # microsegundo
 
-print(dir(evento))
+print(dir(evento)) #metodo
 

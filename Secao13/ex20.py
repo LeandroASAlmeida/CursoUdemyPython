@@ -32,12 +32,7 @@ for aluno in range(qtd_alunos):
         nome = str(input(f"\nDigite o nome do aluno {aluno+1}: ")).strip().title()
 
         if verificar_nome(nome):
-                # Caso nome fornecido tenha 40 caracteres ou mais, irá pegar apenas os primeiros
-                # 40 caracteres do nome, caso o nome não contenha 40 caracteres ele irá preencher até
-                # 40 caracteres usando espaços em branco
             novo_nome = nome[0:40:1] if len(nome) >= 40 else nome + " " * (40 - len(nome))
-
-                # usei o abs() para não aceitar notas negativas
             nota = abs(float(input(f"Digite a nota final do {nome}: ")))
 
             nome_alunos.append(novo_nome)

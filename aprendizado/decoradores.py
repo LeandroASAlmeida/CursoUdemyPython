@@ -111,7 +111,7 @@ def home(request):
     return 'Pode acessar home'
 
 @checa_login
-def servicos(request):
+def servicos(request): #função decoradora
     return 'Pode acessar serviços'
 
 
@@ -119,7 +119,7 @@ def produtos(request):
     return 'Pode acessar produtos'
 
 
-@checa_login
+@checa_login #decorador
 def admin(request):
     return 'Pode acessar admin'
 

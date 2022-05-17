@@ -3,4 +3,4 @@
 
 num = float(input('Informe um valor: '))
 q = num ** 2
-print('O quadrado do número que você digitou é: ',q)
+print(f'O quadrado do número que você digitou é: {q}')

@@ -14,8 +14,11 @@ def soma_num(num1, num2):
         for i in range(num1 + 1, num2):
             soma += i 
     return soma
-print("Informe um numero positivo: ", end=" ")
-n1 = int(input())
-print("Informe outro numero positivo: ", end=" ")
-n2 = int(input())
-print(f"Soma: {soma_num(n1,n2)}")
+
+if __name__ == '__main__': #checagem de escopo de execução
+
+    print("Informe um numero positivo: ", end=" ")
+    n1 = int(input())
+    print("Informe outro numero positivo: ", end=" ")
+    n2 = int(input())
+    print(f"Soma: {soma_num(n1,n2)}")

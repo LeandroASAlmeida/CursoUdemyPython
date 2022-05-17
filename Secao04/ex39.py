@@ -7,6 +7,6 @@ valor1 = (premio * ganhador1)/100
 valor2 = (premio * ganhador2)/100
 valor3 = (premio * ganhador3)/100
 
-print('Valor premio ganhador 1: R$ {}'.format(valor1))
-print('Valor premio ganhador 2: R$ {}'.format(valor2))
-print('Valor premio ganhador 3: R$ {}'.format(valor3))
+print(f'Valor premio ganhador 1: R$ {valor1}')
+print(f'Valor premio ganhador 2: R$ {valor2}')
+print(f'Valor premio ganhador 3: R$ {valor3}')

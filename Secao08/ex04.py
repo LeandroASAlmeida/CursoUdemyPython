@@ -19,6 +19,9 @@ def quadrado_perfeito(numero):
     else:
         print("\nO número deve ser positivo")
 
-num= int(input("Digite um numero: "))
 
-quadrado_perfeito(num)
+if __name__ == '__main__': #checagem de escopo de execução
+
+    num= int(input("Digite um numero: "))
+
+    quadrado_perfeito(num)

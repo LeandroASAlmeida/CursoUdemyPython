@@ -11,8 +11,11 @@ def primos(n):
                 break
 	    
     return numeros
-print("Informe um numero inteiro: ", end=" ")
-num = int(input())
-print("Lista de Numeros Primos: ")
-for item in primos(num):
-    print(item, end=" ")
+
+if __name__ == '__main__': #checagem de escopo de execução
+
+    print("Informe um numero inteiro: ", end=" ")
+    num = int(input())
+    print("Lista de Numeros Primos: ")
+    for item in primos(num):
+        print(item, end=" ")

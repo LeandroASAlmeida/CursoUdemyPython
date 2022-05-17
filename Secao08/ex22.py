@@ -13,7 +13,10 @@ def vlr_int(num):
     for i in range(num+1):
         lista.append("!"*i)
     return lista
-print("Informe um numero inteiro: ", end=" ")
-num = int(input())
-for item in vlr_int(num):
-    print(item)
+
+if __name__ == '__main__': #checagem de escopo de execução
+
+    print("Informe um numero inteiro: ", end=" ")
+    num = int(input())
+    for item in vlr_int(num):
+        print(item)

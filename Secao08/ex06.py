@@ -9,10 +9,13 @@ def horas(h, m, s):
     m = m * 60
     s = s + m + h
     return f"Segundos: {s}"
-print("Informe as horas: ")
-h = int(input())
-print("Informe os minutos: ")
-m = int(input())
-print("Informe os segundos: ")
-s = int(input())
-print(f"{horas(h,m,s)}")
+
+if __name__ == '__main__': #checagem de escopo de execução
+    
+    print("Informe as horas: ")
+    h = int(input())
+    print("Informe os minutos: ")
+    m = int(input())
+    print("Informe os segundos: ")
+    s = int(input())
+    print(f"{horas(h,m,s)}")

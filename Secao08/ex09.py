@@ -7,8 +7,11 @@ V = π ∗ raio2 ∗ altura, onde π = 3.141592.
 
 def volume(r, a):
     return 3.141592 * (r ** 2) * a
-print("Informe a altura do cilindro: ", end=" ")
-a = float(input())
-print("Informe o raio do cilindro: ", end=" ")
-r = float(input())
-print(f"Volume: {volume(r, a)}")
+
+if __name__ == '__main__': #checagem de escopo de execução
+
+    print("Informe a altura do cilindro: ", end=" ")
+    a = float(input())
+    print("Informe o raio do cilindro: ", end=" ")
+    r = float(input())
+    print(f"Volume: {volume(r, a)}")

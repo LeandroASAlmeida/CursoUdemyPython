@@ -150,11 +150,11 @@ class Produto:
     contador = 0
 
     def __init__(self, nome, descricao, valor):
-        self.id = Produto.contador + 1
+        self.id = Produto.contador + 1 # contador id incrementar
         self.nome = nome
         self.descricao = descricao
         self.valor = (valor * Produto.imposto)
-        Produto.contador = self.id
+        Produto.contador = self.id # contador id incrementar
 
 
 # Atributos Dinâmicos -> Um atributos de instância que pode ser criado em tempo de execução.

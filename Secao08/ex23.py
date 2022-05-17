@@ -19,6 +19,9 @@ def tri_lat(n):
     for i in range(n):
         print("*" * (n - i) )
     return "\n"
-print("Informe um numero: ", end=" ")
-num = int(input())
-print(tri_lat(num))
+
+if __name__ == '__main__': #checagem de escopo de execução
+
+    print("Informe um numero: ", end=" ")
+    num = int(input())
+    print(tri_lat(num))

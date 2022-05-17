@@ -24,10 +24,12 @@ def triangulo(med1,med2,med3):
             return 'Escaleno'
     return "triangulo invalido."
 
-print("Informe a primeira medida: ", end=" ")
-m1 = float(input())
-print("Informe a segunda medida: ", end=" ")
-m2 = float(input())
-print("Informe a terceira medida: ", end=" ")
-m3 = float(input())
-print(f"\n Triangulo {m1} , {m2} , {m3} é  {triangulo(m1,m2,m3)}")
+if __name__ == '__main__': #checagem de escopo de execução
+
+    print("Informe a primeira medida: ", end=" ")
+    m1 = float(input())
+    print("Informe a segunda medida: ", end=" ")
+    m2 = float(input())
+    print("Informe a terceira medida: ", end=" ")
+    m3 = float(input())
+    print(f"\n Triangulo {m1} , {m2} , {m3} é  {triangulo(m1,m2,m3)}")

@@ -23,7 +23,7 @@ Diferenças entre Funções e Generator Functions (Funções Geradoras)
 -----------------------------------------------------------------------------------
 
 
-gen = conta_ate(5)
+gen = conta_ate(5) #função
 
 for num in gen:
     print(num)
@@ -52,12 +52,12 @@ for num in gen:
 def conta_ate(valor_maximo):
     contador = 1
     while contador <= valor_maximo:
-        yield contador
+        yield contador# yield espera dentro da função, não sai da função como o  return - aguarda o proximo next
         contador = contador + 1
 
 # OBS: Uma Generator Function não é um Generator. Ela gera um generator. ok?
 
 
 gen = list(conta_ate(10))
-
 print(gen)
+

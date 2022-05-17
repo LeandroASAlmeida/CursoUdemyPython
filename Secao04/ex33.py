@@ -4,4 +4,4 @@ quadrado = lado * 4
 area = lado * lado
 
 
-print("quadradro:",quadrado,"- área:",area)
+print(f"quadradro:",{quadrado},"- área:",{area})

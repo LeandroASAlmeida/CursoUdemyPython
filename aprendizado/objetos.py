@@ -66,7 +66,7 @@ class ContaCorrente:
     contador = 4999
 
     def __init__(self, limite, saldo, cliente):
-        self.__numero = ContaCorrente.contador + 1
+        self.__numero = ContaCorrente.contador + 1 #gera numero da conta automatico
         self.__limite = limite
         self.__saldo = saldo
         self.__cliente = cliente

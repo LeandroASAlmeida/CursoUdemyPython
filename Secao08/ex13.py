@@ -16,17 +16,18 @@ def operacao(num1, num2, op):
         return f"Divisão: {num1/num2}"
     else:
         return "Operador Invalido"
+if __name__ == '__main__': #checagem de escopo de execução
     
-print("Informe o 1° numero: ", end=" ")
-n1 = float(input())
-print("Informe o 2° numero: ", end=" ")
-n2 = float(input())
-print("""\n
- Informe a operação:
- + -> Soma
- - -> Subtração
- * -> Multiplicação
- / -> Divisão
- Operação: """, end=" ")
-op = input()
-print("\n", operacao(n1, n2, op))
+    print("Informe o 1° numero: ", end=" ")
+    n1 = float(input())
+    print("Informe o 2° numero: ", end=" ")
+    n2 = float(input())
+    print("""\n
+    Informe a operação:
+    + -> Soma
+    - -> Subtração
+    * -> Multiplicação
+    / -> Divisão
+    Operação: """, end=" ")
+    op = input()
+    print("\n", operacao(n1, n2, op))

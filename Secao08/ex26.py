@@ -9,7 +9,9 @@ def somatorio(num):
         x += i
     return x
 
-print("Informe um numero inteiro: ", end=" ")
-n = int(input())
-print(f"Somatoria: {somatorio(n)}")
+if __name__ == '__main__': #checagem de escopo de execução
+
+    print("Informe um numero inteiro: ", end=" ")
+    n = int(input())
+    print(f"Somatoria: {somatorio(n)}")
 

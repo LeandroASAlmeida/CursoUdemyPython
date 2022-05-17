@@ -19,9 +19,11 @@ def consumo(km, l):
     else:
         return "Super Econômico!"
     
-print("Informe os Km : ", end=" ")
-km = float(input())
-print("Informe o quanto de gasolina foi gasto: ", end=" ")
-l = float(input())
-print("\n", consumo(km, l))
+if __name__ == '__main__': #checagem de escopo de execução
+
+    print("Informe os Km : ", end=" ")
+    km = float(input())
+    print("Informe o quanto de gasolina foi gasto: ", end=" ")
+    l = float(input())
+    print("\n", consumo(km, l))
 

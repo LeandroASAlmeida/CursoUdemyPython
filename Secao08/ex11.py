@@ -14,16 +14,19 @@ def nota(letra, *args):
     else:
         return f"{letra} invalida."
 
-notas = [] # lista de notas
 
-for i in range(1,4): # range para preencher as 3 notas
-    print(f"Informe a {i}° nota: ", end=" ")
-    n = float(input())
-    notas.append(n)
-print("""\n
- Informe o tipo de media:
- P -> Media Ponderada
- A -> Media Aritmética
- Media: """, end=" ")
-op = input() # escolha entre P e A
-print(f"\nNota: {nota(op, *notas)}")
+if __name__ == '__main__': #checagem de escopo de execução
+
+    notas = [] # lista de notas
+
+    for i in range(1,4): # range para preencher as 3 notas
+        print(f"Informe a {i}° nota: ", end=" ")
+        n = float(input())
+        notas.append(n)
+    print("""\n
+    Informe o tipo de media:
+    P -> Media Ponderada
+    A -> Media Aritmética
+    Media: """, end=" ")
+    op = input() # escolha entre P e A
+    print(f"\nNota: {nota(op, *notas)}")

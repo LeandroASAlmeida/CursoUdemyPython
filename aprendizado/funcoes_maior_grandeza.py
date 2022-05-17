@@ -85,17 +85,17 @@ def faz_me_rir():
 
 rindo = faz_me_rir()
 print(rindo())
-"""
 
+"""
 # Inner Functions (Funções Internas / Nested Functions) podem acessar o escopo de funções mais externas.
 
 
-from random import choice
+from random import choice # choice escolha aleatoria
 
 
 def faz_me_rir_novamente(pessoa):
     def dando_risada():
-        risada = choice(('hahahahaha', 'lolololololo', 'kkkkkkkkkkk'))
+        risada = choice(('hahahahaha', 'lolololololo', 'kkkkkkkkkkk')) # função dentro de outras funções
         return f'{risada} {pessoa}'
     return dando_risada
 

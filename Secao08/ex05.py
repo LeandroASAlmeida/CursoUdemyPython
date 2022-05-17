@@ -8,6 +8,9 @@ def vol_esfera(raio):
     if raio < 1:
         return "Raio Invalido"
     return (4 * 3.14 * (raio ** 3)) / 3
-print("Informe o raio da esfera: ", end=" ")
-r = float(input())
-print(f"\n Volume: {vol_esfera(r):.2f}")
+
+if __name__ == '__main__': #checagem de escopo de execução
+    
+    print("Informe o raio da esfera: ", end=" ")
+    r = float(input())
+    print(f"\n Volume: {vol_esfera(r):.2f}")

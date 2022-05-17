@@ -103,7 +103,7 @@ class Produto:
 
     contador = 0
 
-    def __init__(self, nome, descricao, valor):
+    def __init__(self, nome, descricao, valor): # __init__   ''contrutor'' 
         self.__id = Produto.contador + 1
         self.__nome = nome
         self.__descricao = descricao
@@ -112,7 +112,7 @@ class Produto:
 
     def desconto(self, porcentagem):
         """Retorna o valor do produto com o desconto"""
-        return (self.__valor * (100 - porcentagem)) / 100
+        return (self.__valor * (100 - porcentagem)) / 100 # desconto porcentagem
 
 
 from passlib.hash import pbkdf2_sha256 as cryp
@@ -140,7 +140,7 @@ class Usuario:
         self.__nome = nome
         self.__sobrenome = sobrenome
         self.__email = email
-        self.__senha = cryp.hash(senha, rounds=200000, salt_size=16)
+        self.__senha = cryp.encrypt(senha, rounds=200000, salt_size=16)
         Usuario.contador = self.__id
         print(f'Usuário criado: {self.__gera_usuario()}')
 

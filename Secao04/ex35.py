@@ -1,4 +1,4 @@
 a=5
 b=3
 h=(a**2 + b**2)*2
-print('O valor da hipotenusa é {}'. format(h))
+print(f'O valor da hipotenusa é {h}')

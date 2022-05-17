@@ -26,9 +26,9 @@ print(type(nome))
 
 
 class Produto:
-    pass
+    pass 
 
 
 ps4 = Produto()
 print(ps4)
-print(type(ps4))
+print(type(ps4)) # criando uma nova classe, cria um novo tipo de dado

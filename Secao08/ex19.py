@@ -12,7 +12,6 @@ sucessivamente, até obter o resto 1.
 """
 import math
   
-
 def maior_f_primo (n):
 
     mmaiorprimo = -1
@@ -27,8 +26,10 @@ def maior_f_primo (n):
         mmaiorprimo = n
     return int(mmaiorprimo)
 
-print("Informe um numero: ", end=" ")
-n = int(input())
-print(f"O maior fator primo é {maior_f_primo(n)}")
+if __name__ == '__main__': #checagem de escopo de execução
 
-  
+    print("Informe um numero: ", end=" ")
+    n = int(input())
+    print(f"O maior fator primo é {maior_f_primo(n)}")
+
+    

@@ -6,9 +6,9 @@ numero = float(input('Informe um numero real: '))
 
 if numero >= 0:
     rq = numero ** 0.5
-    print('O numero digitado é maior que zero e é positivo')
-    print('A Raiz quadrada do numero digitado é :{}'.format(rq))
+    print(f'O numero digitado é maior que zero e é positivo')
+    print(f'A Raiz quadrada do numero digitado é :{rq}')
 else:
     nq = numero *2
-    print('O numero digitado é menor que zero e é negativo')
-    print('O valor ao quadrado do numero digitado é: {}'.format(nq))
+    print(f'O numero digitado é menor que zero e é negativo')
+    print(f'O valor ao quadrado do numero digitado é: {nq}')
